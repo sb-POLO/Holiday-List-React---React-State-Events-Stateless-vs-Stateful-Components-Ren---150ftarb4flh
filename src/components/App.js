@@ -40,13 +40,15 @@ const lists = cityList.filter((item) => {
     return false;
 })
 console.log(lists)
+let i = 0;
 
 
 const App = () => {
 
   let arr = lists.map((item) => {
-    console.log(cityList.indexOf(item) + 1);
-    return <li key={"location" + (lists.indexOf(item) + 1)}>{item.name}</li>
+    i++;
+    // console.log("location" + i);
+    return <li key={"location" + i}>{item.name}</li>
   });
 
   return (
