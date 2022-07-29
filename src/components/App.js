@@ -50,7 +50,9 @@ const App = () => {
 
   return (
     <div id="main">
-      {arr}
+      <ol>
+        {arr}
+      </ol>
     </div>
   )
 }
